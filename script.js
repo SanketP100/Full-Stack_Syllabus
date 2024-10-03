@@ -65,7 +65,7 @@ const subheadings = [
     ['Introduction', 'Socket.to', 'How to use Socket.io in Node.js', 'Listeners and emitters', 'Error Handling in web Sockers'],
     ['Introduction', 'How to use WebRTC in Node.js', 'Real Time Communication'],
     ['Introduction', 'Jest', 'How to use jest in Node.js', 'Testing APL'],
-    [''],
+    [' Introduction to SQL', 'Basics To Advanced'],
     ['Introduction To Git & GitHub', 'Git Init', 'Pull', 'Push', 'Commands','Bash', 'Repository Creation On GitHub', 'Introduce Git In VS Code']
 ];
 

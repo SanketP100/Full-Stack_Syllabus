@@ -31,13 +31,15 @@ function updateColors() {
 
 
 const headings = [
-    'Course Walkthrough', 'HTML – Making Architecture', 'CSS – Styling things up', 'JavaScript – Everything about JavaScript',
+    'Course Walkthrough', 'C Programing', 'C++ Programing', 'HTML – Making Architecture', 'CSS – Styling things up', 'JavaScript – Everything about JavaScript',
     'GSAP and Locomotive – Fun Stuff', 'Final Project – Obys Agency Clone', 'React JS', 'React JS Project – Refokus Clone',
-    'Redux', 'React JS Final Project – SCSDB.', 'ExoApe – Bonus Project', 'How Internet Works', 'Node.js ', 'NPM Understanding', 'Package and Script ', 'HTTP Module in Node.js', 'Express Domination', 'Khatabook Project', 'Postman ', 'MongoDB & Mongoose', 'Production Level setup', '	Authentication and anthorization', 'How to utilize the power of AI', 'Multer JS ', 'Caching', 'Web Sockets', 'WebRTC', 'Testing APL', 'SQL', 'Git & GitHub'
+    'Redux', 'React JS Final Project – SCSDB.', 'ExoApe – Bonus Project', 'How Internet Works', 'Node.js ', 'NPM Understanding', 'Package and Script ', 'HTTP Module in Node.js', 'Express Domination', 'Khatabook Project', 'Postman ', 'MongoDB & Mongoose', 'Production Level setup', '	Authentication and anthorization', 'How to utilize the power of AI', 'Multer JS ', 'Caching', 'Web Sockets', 'WebRTC', 'Testing APL', 'Final Project - DevTube','Deployment', 'SQL', 'Git & GitHub'
 ];
 
 const subheadings = [
     ['Essentials – So you don’t fail', 'Introduction – Getting Started'],
+    ['Basics', 'Decision Making', 'Looping', 'Function', 'Array'],
+    ['Introduction', 'OOPs Concepts', 'OOPs Other Concepts'],
     ['HTML.Deep Dive', 'HTML5-Semantic'],
     ['CSS Basics – Understanding Core Concepts', 'CSS Grid Layout', 'CSS Responsive Project', 'Tailwind CSS', 'Bootstrap', 'Projects'],
     ['JavaScript – The Foundation', 'Advance JavaScript – God level JS', 'JS Animations – DOM Functionality Add', 'Asynchronous JavaScript', 'JS Interview preparation', 'Import and Export '],
@@ -65,19 +67,21 @@ const subheadings = [
     ['Introduction', 'Socket.to', 'How to use Socket.io in Node.js', 'Listeners and emitters', 'Error Handling in web Sockers'],
     ['Introduction', 'How to use WebRTC in Node.js', 'Real Time Communication'],
     ['Introduction', 'Jest', 'How to use jest in Node.js', 'Testing APL'],
+    ['Introduction', 'Project Setup', 'CRUD Operations', 'Coding Overview'],
+    ['Introduction', 'Vercel', 'How to deploy on Vercel', 'Render', 'How to deploy on Render'],
     [' Introduction to SQL', 'Basics To Advanced'],
     ['Introduction To Git & GitHub', 'Git Init', 'Pull', 'Push', 'Commands','Bash', 'Repository Creation On GitHub', 'Introduce Git In VS Code']
 ];
 
 function createAccordionItem(index) {
     const item = document.createElement('div');
-    item.className = 'accordion-item bg-blake text-black p-0';
+    item.className = 'accordion-item bg-blake text-black p-0 px-32';
 
     let accordionContent = `
                 <div class="flex items-center justify-between cursor-pointer lg:p-10 p-5 border-t-[1px] border-[#676161] tracking-wider">
                     <h1 class="text-[4.5vw] lg:text-[2.2vw] font-bold">${headings[index]}</h1>
-                    <svg class="h-6 w-6 text-gray-300 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    <svg class="h-8 w-8 p-1 text-gray-300 bg-[#212121] rounded-full transform transition-transform duration-300 flex items-center justify-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path  class="font-bold" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </div>
                 <div class="accordion-content space-y-0">`;

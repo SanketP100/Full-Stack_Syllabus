@@ -24,6 +24,15 @@ body, button, div {
     transition: all 0.3s ease;
     
 }
+
+.part2{
+    filter: drop-shadow(0px 0px 30px #00dda9);
+}
+
+.h2text{
+    filter: drop-shadow(0px 0px 30px #1d0801);
+}
+
 .accordion-content {
     max-height: 0;
     opacity: 0;
